@@ -13,7 +13,8 @@
     "@types/node": "^20.17.10",
     "ant-design-vue": "^4.2.6",
     "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "vue-router": "^4.5.0",
+    "axios": "^1.7.9"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",

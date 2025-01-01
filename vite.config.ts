@@ -19,7 +19,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.resolve('./src'), //相对路径别名配置，使用 @ 符代替src
+      '@': path.resolve(__dirname, 'src'), //相对路径别名配置，使用 @ 符代替src
     },
   },
   server: {
@@ -27,7 +27,16 @@ export default defineConfig({
     host: '0.0.0.0',
     cors: true,
     proxy: {
-      //
+      // 设置需要代理的请求路径为以 /api 开头的请求。
+      '/api': {
+        // 指定代理服务器的目标地址为 http://192.168.1.47:1856。所有以 /api 开头的请求将被转发到该地址。
+        target: 'http://192.168.1.196:8098',
+        // 设置请求头中的 Origin 字段为目标地址。这样可以绕过一些安全限制。
+        changeOrigin: true,
+        // 如果后端没有处理api路径的前提下
+        // 将请求路径中以 /api 开头的部分替换为空字符串。这样可以去除请求路径中的 /api 部分，以符合目标服务器的路由规则。
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
     },
   },
 })

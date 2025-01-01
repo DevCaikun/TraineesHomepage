@@ -20,14 +20,8 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-    /*src文件夹别名*/
-    "baseUrl": "./", //解析非相对模块的基地址，默认是当前目录
-    "paths": { //路径映射，相对于baseUrl
-      "@/*": [
-        "src/*"
-      ],
-    }
-
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
   },
   "include": ["vite.config.ts"]
 }
