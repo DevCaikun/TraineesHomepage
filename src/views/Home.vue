@@ -790,11 +790,11 @@ onBeforeUnmount(() => {
               .projectItemLeft {
 
                 h1 {
-                  font-size: 12px !important;
+                  font-size: 14px !important;
                 }
                 p {
                   margin: 5px 0px !important;
-                  font-size: 10px !important;
+                  font-size: 11px !important;
                 }
               }
               .projectItemRight {
