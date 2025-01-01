@@ -9,6 +9,7 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 
 PC截图  
 ![PcScreenshots.png](src/assets/img/PcScreenshots.png)  
+![PcScreenshotsDark.png](src/assets/img/PcScreenshotsDark.png)  
 
 Mobile截图  
 ![MobileScreenshots.png.jpg](src/assets/img/MobileScreenshots.png.jpg)  
