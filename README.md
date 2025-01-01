@@ -1,4 +1,4 @@
-# Vue3 + TypeScript5 + Vite6
+# TypeScript5 + Vite6 + Axios + Vue3 + Ant Design Vue 4 + SCSS
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
