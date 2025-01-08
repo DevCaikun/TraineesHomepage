@@ -88,7 +88,7 @@
               <span class="purpleText textBackground">persevere</span> in what you do.
             </div>
             <div class="iconContainer">
-              <a class="iconItem" onclick="" href="https://github.com/DevCaikun/TraineesHomepage" target="_blank">
+              <a class="iconItem" onclick="" href="https://gitee.com/DevCaikun/TraineesHomepage" target="_blank">
                 <img src="@/assets/svg/github.svg" alt="">
                 <div class="iconTip">Github</div>
               </a>
@@ -199,7 +199,7 @@ const site = ref([
 // 项目
 const project = ref([
   {title:"TraineesBase",introduce:"导航、博客、百科、专栏、社区等模块",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesBase"},
-  {title:"TraineesAdmin",introduce:"基地集成、权限管理、代码生成",img:siteProjectIcon5,link:"https://github.com/DevCaikun/TraineesAdmin"},
+  {title:"TraineesAdmin",introduce:"基地集成、权限管理、代码生成",img:siteProjectIcon5,link:"https://gitee.com/DevCaikun/TraineesAdmin"},
   {title:"TraineesHomepage",introduce:"基于Vue3构建的炫酷唯美个人主页",img:siteProjectIcon4,link:"https://github.com/DevCaikun/TraineesHomepage"},
 ]);
 
