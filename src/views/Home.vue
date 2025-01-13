@@ -31,12 +31,22 @@
               <ul class="left-time-line">
                 <li>
                   <div class="focus"></div>
-                  <a href="https://homepage.trainees.cn">TraineesHomepage-个人主页上线</a>
+                  <a href="https://www.trainees.cn/blog">Blog into Base-练习生博客迁移到练习生基地成为其中一个子模块进行维护</a>
+                  <div>2025.12</div>
+                </li>
+                <li>
+                  <div class="focus"></div>
+                  <a href="https://www.trainees.cn">TraineesBase-练习生基地,基于Abp.vNext的企业级后台管理框架上线</a>
+                  <div>2025.10</div>
+                </li>
+                <li>
+                  <div class="focus"></div>
+                  <a href="https://homepage.trainees.cn">TraineesHomepage-练习生个人主页,基于Vue3的个人简历介绍主页上线</a>
                   <div>2024.12</div>
                 </li>
                 <li>
                   <div class="focus"></div>
-                  <a href="https://base.trainees.cn">TraineesBase-个人在线知识库(练习生基地)上线</a>
+                  <a href="https://www.trainees.cn/blog">TraineesBlog-练习生博客,基于.Net的技术知识库系统上线</a>
                   <div>2024.10</div>
                 </li>
                 <li>
@@ -94,14 +104,25 @@
               <span class="purpleText textBackground">persevere</span> in what you do.
             </div>
             <div class="iconContainer">
-              <a class="iconItem" onclick="" href="https://gitee.com/DevCaikun/TraineesHomepage" target="_blank">
-                <img src="@/assets/svg/github.svg" alt="">
-                <div class="iconTip">Github</div>
-              </a>
-              <a class="iconItem" onclick="" href="https://mail.163.com/">
-                <img src="@/assets/svg/mail.svg" alt="">
-                <div class="iconTip">Mail</div>
-              </a>
+              <a-popover title="" trigger="click">
+                <template #content>
+                  <a-button link type="link" href="https://gitee.com/DevCaikun/TraineesHomepage">GitEE</a-button><br>
+                  <a-button link type="link" href="https://github.com/DevCaikun/TraineesHomepage">GitBub</a-button>
+                </template>
+                <div class="iconItem">
+                  <img src="@/assets/svg/github.svg" alt="">
+                  <div class="iconTip">Git</div>
+                </div>
+              </a-popover>
+              <a-popover title="网易邮箱" trigger="click">
+                <template #content>
+                  <a-button link type="link" href="https://mail.163.com">DevCaikun@163.com</a-button>
+                </template>
+                <div class="iconItem">
+                  <img src="@/assets/svg/mail.svg" alt="">
+                  <div class="iconTip">Mail</div>
+                </div>
+              </a-popover>
               <a class="iconItem" @click="showModalHandle('sponsor')" href="javascript:void(0)">
                 <img src="@/assets/svg/sponsor.svg" alt="">
                 <div class="iconTip">赞助</div>
@@ -162,7 +183,6 @@
               <img class="skillWapImg" src="@/assets/svg/skillWap.svg" alt="" srcset="">
             </div>
           </a-col>
-
         </a-row>
       </a-layout-content>
       <a-layout-footer :class="themeClass" class="layout-footer">
@@ -189,6 +209,8 @@ import siteProjectIcon6 from '@/assets/img/i6.png';
 import qqImg from '@/assets/img/qqGroup.jpg';
 import weixinImg from '@/assets/img/weixinGroup.jpg';
 import sponsorImg from '@/assets/img/weixinSponsor.jpg';
+
+const gitShowVisible = ref(false);//github/gitee弹框
 
 const isDesktop = ref(false); // 默认不是桌面端
 const isDarkMode = ref(false); // 控制是否是暗黑模式
@@ -484,19 +506,21 @@ onBeforeUnmount(() => {
           }
           .iconContainer {
             width: 100%;
-            height: 60px;
+            height: auto;
             display: flex;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 2.50rem;
+            flex-wrap: wrap;
+            justify-content: start;
             .iconItem {
               width: 49px;
               height: 43px;
               box-sizing: border-box;
               border-radius: 7px;
               display: flex;
-              margin-left: 10px;
+              margin-left: 1rem;
+              margin-bottom: 5px;
               backdrop-filter: blur(var(0px));
-              -webkit-backdrop-filter: blur(var(0px));
               background: rgba(249, 250, 251, 0.2);
               align-items: center;
               justify-content: center;
@@ -523,17 +547,18 @@ onBeforeUnmount(() => {
               display: block;
             }
             .switch {
-              width: 55px;
+              width: 49px;
               height: 43px;
               box-sizing: border-box;
               border-radius: 7px;
               display: flex;
-              margin-left: 10px;
-              backdrop-filter: blur(0px);-webkit-backdrop-filter: blur(0px);
+              margin-left: 1rem;
+              margin-bottom: 5px;
+              backdrop-filter: blur(var(0px));
               background: rgba(249, 250, 251, 0.2);
               align-items: center;
               justify-content: center;
-              transition: width 1s ease, opacity 1s ease, transform 1s ease;
+              transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
               flex-shrink: 0;
               .ant-switch-checked {
                 display: flex;
@@ -751,7 +776,9 @@ onBeforeUnmount(() => {
             }
           }
           .iconContainer {
+            margin-top: 4rem !important;
             .iconItem {
+              margin-left: 1rem;
               img {
                 width: 22px;
                 height: 22px;
@@ -767,6 +794,7 @@ onBeforeUnmount(() => {
             .iconItem:hover .iconTip {
             }
             .switch {
+              margin-left: 1rem !important;
             }
             .switch:hover {
             }

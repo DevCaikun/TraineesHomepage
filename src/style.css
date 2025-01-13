@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    /* 1个rem的基数 */
+    font-size: calc(100vw / 116) !important;
+}
+
 body {
     margin: 0;
     padding: 0;
