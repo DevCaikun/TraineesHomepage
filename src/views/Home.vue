@@ -192,15 +192,15 @@ const popPicture = ref(""); //弹框图片
 
 // 网站
 const site = ref([
-  {title:"练习生基地",introduce:"资源导航、技术博客、维技百科、项目专栏、互动交流",img:siteProjectIcon1,link:"https://base.trainees.cn"},
-  {title:"练习生图床",introduce:"专属于你的图片资源库",img:siteProjectIcon2,link:"https://blog.trainees.cn"},
+  {title:"练习生基地",introduce:"技术博客、维技百科、资源导航、社区交流",img:siteProjectIcon1,link:"https://www.trainees.cn"},
+  {title:"练习生图床",introduce:"图片资源库,每日一观,心情愉悦",img:siteProjectIcon2,link:"https://img.trainees.cn"},
   {title:"练习生主页",introduce:"我是谁，我来自哪里，我将去往何方。",img:siteProjectIcon3,link:"https://homepage.trainees.cn"},
 ]);
 // 项目
 const project = ref([
-  {title:"TraineesBase",introduce:"导航、博客、百科、专栏、社区等模块",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesBase"},
-  {title:"TraineesAdmin",introduce:"基地集成、权限管理、代码生成",img:siteProjectIcon5,link:"https://gitee.com/DevCaikun/TraineesAdmin"},
-  {title:"TraineesHomepage",introduce:"基于Vue3构建的炫酷唯美个人主页",img:siteProjectIcon4,link:"https://github.com/DevCaikun/TraineesHomepage"},
+  {title:"TraineesBase",introduce:"博客、导航、百科、社区等模块",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesBase"},
+  {title:"TraineesAdmin",introduce:"后台管理、权限管理、代码生成",img:siteProjectIcon5,link:"https://github.com/DevCaikun/TraineesAdmin"},
+  {title:"TraineesHomepage",introduce:"炫酷唯美个人主页",img:siteProjectIcon4,link:"https://github.com/DevCaikun/TraineesHomepage"},
 ]);
 
 // 监听主题设定的值如果发生变化则动态设定对应的class
