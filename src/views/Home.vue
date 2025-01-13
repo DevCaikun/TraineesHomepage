@@ -80,7 +80,13 @@
               <span class="gradientText">DevCaikun</span>
               <h6>你好，我是程序员菜鲲</h6>
             </div>
-            <div class="description">👦 <span class="purpleText">Full Stack</span> Developer</div>
+            <div class="description">
+              👦
+              <span class="purpleText">C#.Net</span>&nbsp;
+              B/S&nbsp;
+              <span class="purpleText">Full Stack</span>&nbsp;
+              Developer
+            </div>
             <div class="description">
               📝 The only way to achieve greatness is to
               <span class="purpleText textBackground">love</span>
@@ -175,10 +181,10 @@
 import {computed, onBeforeUnmount, onMounted, ref} from "vue";
 import snakeLightSvg from '@/assets/svg/snake-Light.svg';
 import siteProjectIcon1 from '@/assets/img/i1.png';
-import siteProjectIcon2 from '@/assets/img/i2.png';
+// import siteProjectIcon2 from '@/assets/img/i2.png';
 import siteProjectIcon3 from '@/assets/img/i3.png';
 import siteProjectIcon4 from '@/assets/img/i4.png';
-import siteProjectIcon5 from '@/assets/img/i5.png';
+// import siteProjectIcon5 from '@/assets/img/i5.png';
 import siteProjectIcon6 from '@/assets/img/i6.png';
 import qqImg from '@/assets/img/qqGroup.jpg';
 import weixinImg from '@/assets/img/weixinGroup.jpg';
@@ -192,15 +198,13 @@ const popPicture = ref(""); //弹框图片
 
 // 网站
 const site = ref([
-  {title:"练习生基地",introduce:"技术博客、维技百科、资源导航、社区交流",img:siteProjectIcon1,link:"https://www.trainees.cn"},
-  {title:"练习生图床",introduce:"图片资源库,每日一观,心情愉悦",img:siteProjectIcon2,link:"https://img.trainees.cn"},
+  {title:"练习生基地",introduce:"后台管理、技术博客、维技百科、资源导航、社区交流",img:siteProjectIcon1,link:"https://www.trainees.cn"},
   {title:"练习生主页",introduce:"我是谁，我来自哪里，我将去往何方。",img:siteProjectIcon3,link:"https://homepage.trainees.cn"},
 ]);
 // 项目
 const project = ref([
-  {title:"TraineesBase",introduce:"博客、导航、百科、社区等模块",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesBase"},
-  {title:"TraineesAdmin",introduce:"后台管理、权限管理、代码生成",img:siteProjectIcon5,link:"https://github.com/DevCaikun/TraineesAdmin"},
-  {title:"TraineesHomepage",introduce:"炫酷唯美个人主页",img:siteProjectIcon4,link:"https://github.com/DevCaikun/TraineesHomepage"},
+  {title:"TraineesBase",introduce:"基于C#.Net的Abp.vNext微服务后台管理框架, 内置博客模块 和 后台管理、权限管理、代码生成、资源导航、技术百科、技术社区等模块",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesBase"},
+  {title:"TraineesHomepage",introduce:"炫酷唯美个人主页,采用TypeScript5 + Vite6 + Axios2 + Vue3 + Ant Design Vue 4 + SCSS2",img:siteProjectIcon4,link:"https://github.com/DevCaikun/TraineesHomepage"},
 ]);
 
 // 监听主题设定的值如果发生变化则动态设定对应的class
