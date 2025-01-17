@@ -225,7 +225,7 @@ const popPicture = ref(""); //弹框图片
 
 // 网站
 const site = ref([
-  {title:"练习生Admin-Net",introduce:"后台管理、技术博客、维技百科、资源导航、项目文档、社区交流",img:siteProjectIcon1,link:"https://admin-net.trainees.cn"},
+  {title:"练习生Admin-Net",introduce:".Net后台管理框架",img:siteProjectIcon1,link:"https://admin-net.trainees.cn"},
   {title:"练习生博客",introduce:"后台管理、技术博客、维技百科、资源导航、项目文档、社区交流",img:siteProjectIcon1,link:"https://blog.trainees.cn"},
   {title:"练习生主页",introduce:"我是谁，我来自哪里，我将去往何方。",img:siteProjectIcon3,link:"https://homepage.trainees.cn"},
 ]);
