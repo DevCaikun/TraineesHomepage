@@ -225,13 +225,14 @@ const popPicture = ref(""); //弹框图片
 
 // 网站
 const site = ref([
+  {title:"练习生Admin-Net",introduce:"后台管理、技术博客、维技百科、资源导航、项目文档、社区交流",img:siteProjectIcon1,link:"https://admin-net.trainees.cn"},
   {title:"练习生博客",introduce:"后台管理、技术博客、维技百科、资源导航、项目文档、社区交流",img:siteProjectIcon1,link:"https://blog.trainees.cn"},
   {title:"练习生主页",introduce:"我是谁，我来自哪里，我将去往何方。",img:siteProjectIcon3,link:"https://homepage.trainees.cn"},
 ]);
 // 项目
 const project = ref([
   {title:"TraineesAdmin.Net",introduce:"基于C#+.Net+Abp.vNext+Furion+PostgreSql+Vue的微服务后台管理框架, 内置博客 和 后台管理、权限管理、代码生成 等模块",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesAdmin.Net"},
-  {title:"TraineesBlog",introduce:"基于JDK21+SpringBoot3+PostgreSql17+React19的微服务博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科、技术社区等模块",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesBlog"},
+  {title:"TraineesBlog",introduce:"基于JDK21+SpringBoot3+PostgreSql17+React19的微服务博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科、技术社区等模块",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesBlogPro"},
   {title:"TraineesHomepage",introduce:"炫酷唯美个人主页,采用TypeScript5 + Vite6 + Axios2 + Vue3 + Ant Design Vue 4 + SCSS2",img:siteProjectIcon4,link:"https://github.com/DevCaikun/TraineesHomepage"},
 ]);
 
