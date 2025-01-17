@@ -7,20 +7,9 @@ const instanceRouter = createRouter({
             name: "index",
             path: "/",
             component: () => import("../views/Index.vue"),
-            redirect: "/home",
             meta: {
                 title: '首页',
             },
-            children: [
-                {
-                    name: "home",
-                    path: "home",
-                    component: () => import("../views/Home.vue"),
-                    meta: {
-                        title: '主页',
-                    }
-                },
-            ],
         },
     ]
 });
