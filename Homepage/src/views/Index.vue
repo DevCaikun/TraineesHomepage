@@ -31,20 +31,25 @@
               <ul class="left-time-line">
                 <li>
                   <div class="focus"></div>
-                  <a class="link-text" href="https://admin.trainees.cn">TraineesAdmin.Net<br>：练习生中后台管理框架,基于Abp.vNext的企业级后台管理框架上线</a>
-                  <div>：2025.10</div>
+                  <a class="link-text" href="https://admin.trainees.cn">TraineesAdmin.Net<br>：练习生中后台管理框架,基于Abp.vNext的企业级后台管理框架上线开源</a>
+                  <div>：2025.12</div>
+                </li>
+                <li>
+                  <div class="focus"></div>
+                  <a class="link-text" href="https://workflow.trainees.cn">TraineesWorkflow.Net<br>：练习生工作流框架,基于Abp.vNext的企业级工作流框架上线开源</a>
+                  <div>：2025.7</div>
                 </li>
                 <li>
                   <div class="focus"></div>
                   <div>
-                    <a class="link-text" href="https://devcaikun.trainees.cn">TraineesHomepage<br>：练习生个人主页,基于Vue3的个人简历介绍主页上线</a>
+                    <a class="link-text" href="https://devcaikun.trainees.cn">TraineesHomepage<br>：练习生个人主页,基于Vue3的前端项目,适用于程序员的个人简历介绍主页上线开源</a>
                   </div>
                   <div>：2024.12</div>
                 </li>
                 <li>
                   <div class="focus"></div>
                   <div>
-                    <a class="link-text" href="https://www.trainees.cn">TraineesBlog<br>：练习生博客,基于.Net和Java的技术知识库系统初版上线</a>
+                    <a class="link-text" href="https://www.trainees.cn">TraineesBlog<br>：练习生博客,基于Java和.Net的技术知识库系统初版上线开源</a>
                   </div>
                   <div>：2024.10</div>
                 </li>
@@ -226,8 +231,8 @@ import snakeLightSvg from '@/assets/svg/snake-Light.svg';
 import siteProjectIcon1 from '@/assets/img/i1.png';
 import siteProjectIcon2 from '@/assets/img/i2.png';
 import siteProjectIcon3 from '@/assets/img/i3.png';
-import siteProjectIcon4 from '@/assets/img/i4.png';
-import siteProjectIcon5 from '@/assets/img/i5.png';
+// import siteProjectIcon4 from '@/assets/img/i4.png';
+// import siteProjectIcon5 from '@/assets/img/i5.png';
 import siteProjectIcon6 from '@/assets/img/i6.png';
 import qqImg from '@/assets/img/qqGroup.jpg';
 import weixinImg from '@/assets/img/weixinGroup.jpg';
@@ -252,7 +257,7 @@ const project = ref([
   {title:"TraineesWorkflow.Net",introduce:"基于TraineesAdmin.Net的工作流框架",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesAdmin.Net"},
   {title:"TraineesBlog.Net",introduce:"基于JDK21+SpringBoot3+PostgreSql17+React19的博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科等模块",img:siteProjectIcon2,link:"https://github.com/DevCaikun/TraineesWorkflow.Net"},
   {title:"TraineesBlog4J",introduce:"基于JDK21+SpringBoot3+PostgreSql17+React19的博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科等模块",img:siteProjectIcon2,link:"https://github.com/DevCaikun/TraineesBlog4J"},
-  {title:"TraineesHomepage",introduce:"炫酷唯美个人主页,采用TypeScript5 + Vite6 + Axios2 + Vue3 + Ant Design Vue 4 + SCSS2",img:siteProjectIcon1,link:"https://github.com/DevCaikun/TraineesHomepage"},
+  {title:"TraineesHomepage",introduce:"炫酷唯美的程序员个人介绍主页,采用TypeScript5 + Vite6 + Axios2 + Vue3 + Ant Design Vue 4 + SCSS2",img:siteProjectIcon1,link:"https://github.com/DevCaikun/TraineesHomepage"},
 ]);
 
 // 监听主题设定的值如果发生变化则动态设定对应的class

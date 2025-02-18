@@ -18,9 +18,5 @@
       ]
     }
   },
-  "include": [
-    "Homepage/src/**/*.ts",
-    "Homepage/src/**/*.tsx",
-    "Homepage/src/**/*.vue"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
