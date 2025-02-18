@@ -31,62 +31,63 @@
               <ul class="left-time-line">
                 <li>
                   <div class="focus"></div>
-                  <a class="link-text" href="https://trainees-admin-net.trainees.cn">TraineesAdmin.Net-练习生Admin,基于Abp.vNext的企业级后台管理框架上线</a>
-                  <div>2025.10</div>
+                  <a class="link-text" href="https://admin.trainees.cn">TraineesAdmin.Net<br>：练习生中后台管理框架,基于Abp.vNext的企业级后台管理框架上线</a>
+                  <div>：2025.10</div>
                 </li>
                 <li>
                   <div class="focus"></div>
                   <div>
-                    <a class="link-text" href="https://homepage.trainees.cn">TraineesHomepage-练习生个人主页,基于Vue3的个人简历介绍主页上线</a>
+                    <a class="link-text" href="https://devcaikun.trainees.cn">TraineesHomepage<br>：练习生个人主页,基于Vue3的个人简历介绍主页上线</a>
                   </div>
-                  <div>2024.12</div>
+                  <div>：2024.12</div>
                 </li>
                 <li>
                   <div class="focus"></div>
                   <div>
-                    <a class="link-text" href="https://blog.trainees.cn">TraineesBlog-练习生博客,基于Java的技术知识库系统上线</a>
+                    <a class="link-text" href="https://www.trainees.cn">TraineesBlog<br>：练习生博客,基于.Net和Java的技术知识库系统初版上线</a>
                   </div>
-                  <div>2024.10</div>
+                  <div>：2024.10</div>
                 </li>
                 <li>
                   <div class="focus"></div>
                   <div>
-                    <a class="link-text" href="#">加入广州XXX集团工业自动化领域-负责某新能源客户软件代码编写</a>
+                    <a class="link-text" href="#">加入广州XXX集团工业自动化领域<br>：负责某新能源客户软件代码编写</a>
                   </div>
-                  <div>2023.6</div>
+                  <div>：2023.6</div>
                 </li>
                 <li>
                   <div class="focus"></div>
                   <div>
                     <a class="link-text" href="#">捡起了碎的一地的IT知识</a>
                   </div>
-                  <div>2023.2</div>
+                  <div>：2023.2</div>
                 </li>
                 <li>
                   <div class="focus"></div>
                   <div>
                     <a class="link-text" href="#">离职出来后洗心革面,决定专心学习巩固专业技能</a>
                   </div>
-                  <div>2022.6</div>
+                  <div>：2022.6</div>
                 </li>
                 <li>
                   <div class="focus"></div>
                   <div>
-                    <a class="link-text" href="#">加入贵阳XX科技集团-负责某省东\南部某项业务的售后和运营</a>
+                    <a class="link-text" href="#">加入贵阳XX科技集团<br>：负责某省东\南部某项业务的售后和运营</a>
                   </div>
-                  <div>2020.12</div>
+                  <div>：2020.12</div>
                 </li>
                 <li>
                   <div class="focus"></div>
                   <div>
-                    <a class="link-text" href="http://homepage.trainees.cn">放暑假在家搭建人生第一个网站</a>
+                    <a class="link-text" href="http://www.yangmufa.com">放暑假在家搭建人生第一个网站</a>
                   </div>
-                  <div>2018.8</div>
+                  <div>：2018.8</div>
                 </li>
               </ul>
             </div>
           </a-col>
           <!-- 第二列：占19份，手机和电脑端都显示 -->
+
           <a-col class="layout-col-right" :span="19" :xs="24" :sm="24" :md="19" :lg="19">
             <a-modal v-model:open="showModal" centered :footer="null" closeIcon="" title="" width="50">
               <img :src="popPicture" alt="" style="max-width: 200px;max-height: 350px;margin: 20px" />
@@ -155,6 +156,12 @@
               <img src="../assets/svg/site.svg" alt="">
               Site
             </div>
+
+
+
+
+
+
             <div class="projectList">
               <a v-for="(siteData,index) in site" :key="index" class="projectItem a" target="_blank" :href="siteData.link" >
                 <div class="projectItemLeft">
@@ -166,10 +173,12 @@
                 </div>
               </a>
             </div>
+
             <div class="title">
               <img src="../assets/svg/project.svg" alt="">
               Project
             </div>
+
             <div class="projectList">
               <a v-for="(projectData,index) in project" :key="index" class="projectItem b" target="_blank" :href="projectData.link" >
                 <div class="projectItemLeft">
@@ -177,7 +186,7 @@
                   <p>{{projectData.introduce}}</p>
                 </div>
                 <div class="projectItemRight">
-                  <img :src="projectData.img" alt="">
+                  <img :src="projectData.img.toString()" alt="">
                 </div>
               </a>
             </div>
@@ -185,11 +194,18 @@
               <img src="../assets/svg/skills.svg" alt="">
               Skills
             </div>
+
+
+
             <div class="skill">
               <img class="skillPcImg" src="../assets/svg/skillPc.svg" alt="" srcset="">
               <img class="skillWapImg" src="../assets/svg/skillWap.svg" alt="" srcset="">
             </div>
+
+
+
           </a-col>
+
         </a-row>
       </a-layout-content>
       <a-layout-footer :class="themeClass" class="layout-footer">
@@ -208,10 +224,10 @@
 import {computed, onBeforeUnmount, onMounted, ref} from "vue";
 import snakeLightSvg from '@/assets/svg/snake-Light.svg';
 import siteProjectIcon1 from '@/assets/img/i1.png';
-// import siteProjectIcon2 from '@/assets/img/i2.png';
+import siteProjectIcon2 from '@/assets/img/i2.png';
 import siteProjectIcon3 from '@/assets/img/i3.png';
 import siteProjectIcon4 from '@/assets/img/i4.png';
-// import siteProjectIcon5 from '@/assets/img/i5.png';
+import siteProjectIcon5 from '@/assets/img/i5.png';
 import siteProjectIcon6 from '@/assets/img/i6.png';
 import qqImg from '@/assets/img/qqGroup.jpg';
 import weixinImg from '@/assets/img/weixinGroup.jpg';
@@ -225,15 +241,18 @@ const popPicture = ref(""); //弹框图片
 
 // 网站
 const site = ref([
-  {title:"TraineesAdmin.Net",introduce:".Net微服务后台管理框架",img:siteProjectIcon1,link:"https://admin-net.trainees.cn"},
-  {title:"TraineesBlog",introduce:"后台管理、技术博客、维技百科、资源导航、项目文档、社区交流",img:siteProjectIcon1,link:"https://blog.trainees.cn"},
-  {title:"TraineesHomepage",introduce:"我是谁，我来自哪里，我将去往何方。",img:siteProjectIcon3,link:"https://homepage.trainees.cn"},
+  {title:"程序员菜鲲",introduce:"TraineesHomepage项目演示站和个人介绍",img:siteProjectIcon1,link:"https://devcaikun.trainees.cn"},
+  {title:"练习生博客",introduce:"TraineesBlog.Net和TraineesBlog4J项目演示站和个人博客",img:siteProjectIcon2,link:"https://www.trainees.cn"},
+  {title:"练习生中后台框架",introduce:"TraineesAdmin.Net项目演示站",img:siteProjectIcon3,link:"https://admin.trainees.cn"},
+  {title:"练习生工作流框架",introduce:"TraineesWorkflow.Net项目演示站",img:siteProjectIcon6,link:"https://workflow.trainees.cn"},
 ]);
 // 项目
 const project = ref([
-  {title:"TraineesAdmin.Net",introduce:"基于C#+.Net8+Abp.vNext+Furion+PostgreSql+Vue的DDD领域驱动微服务后台管理框架, 内置用户权限管理、日志、工作流、博客、社区、代码生成、Admin等模块,可根据需要新增模块即可轻松集成.，、",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesAdmin.Net"},
-  {title:"TraineesBlog",introduce:"基于JDK21+SpringBoot3+PostgreSql17+React19的博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科等模块",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesBlogPro"},
-  {title:"TraineesHomepage",introduce:"炫酷唯美个人主页,采用TypeScript5 + Vite6 + Axios2 + Vue3 + Ant Design Vue 4 + SCSS2",img:siteProjectIcon4,link:"https://github.com/DevCaikun/TraineesHomepage"},
+  {title:"TraineesAdmin.Net",introduce:"基于C#+.Net8+Abp.vNext+Furion+PostgreSql+Vue的DDD领域驱动微服务后台管理框架, 内置用户权限管理、日志、工作流、博客、社区、代码生成、Admin等模块,可根据需要新增模块即可轻松集成.，、",img:siteProjectIcon3,link:"https://github.com/DevCaikun/TraineesAdmin.Net"},
+  {title:"TraineesWorkflow.Net",introduce:"基于TraineesAdmin.Net的工作流框架",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesAdmin.Net"},
+  {title:"TraineesBlog.Net",introduce:"基于JDK21+SpringBoot3+PostgreSql17+React19的博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科等模块",img:siteProjectIcon2,link:"https://github.com/DevCaikun/TraineesWorkflow.Net"},
+  {title:"TraineesBlog4J",introduce:"基于JDK21+SpringBoot3+PostgreSql17+React19的博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科等模块",img:siteProjectIcon2,link:"https://github.com/DevCaikun/TraineesBlog4J"},
+  {title:"TraineesHomepage",introduce:"炫酷唯美个人主页,采用TypeScript5 + Vite6 + Axios2 + Vue3 + Ant Design Vue 4 + SCSS2",img:siteProjectIcon1,link:"https://github.com/DevCaikun/TraineesHomepage"},
 ]);
 
 // 监听主题设定的值如果发生变化则动态设定对应的class
@@ -620,9 +639,13 @@ onBeforeUnmount(() => {
           .projectList {
             width: 100%;
             height: auto;
-            display: flex;
+            display: flex; // 启用 Flexbox 布局
             flex-wrap: wrap;
-            justify-content: start;
+            //justify-content: start;
+            //justify-content: space-between;
+            .child {
+              flex: 1; // 每个子元素平分父元素的宽度
+            }
             .projectItem {
               width: calc(25% - 5px);
               margin: 5px 5px;
@@ -835,8 +858,12 @@ onBeforeUnmount(() => {
           .title:hover {
           }
           .projectList {
+            //display: flex;
+            //flex-wrap: wrap;
+            //align-items: center;
+            //justify-content: center;
             .projectItem {
-              width: calc(50% - 35px) !important;
+              width: calc(57% - 35px) !important;
               padding: 10px !important;
               .projectItemLeft {
 
