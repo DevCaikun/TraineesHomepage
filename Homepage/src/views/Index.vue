@@ -255,7 +255,7 @@ const site = ref([
 const project = ref([
   {title:"TraineesAdmin.Net",introduce:"基于C#+.Net8+Abp.vNext+Furion+PostgreSql+Vue的DDD领域驱动微服务后台管理框架, 内置用户权限管理、日志、工作流、博客、社区、代码生成、Admin等模块,可根据需要新增模块即可轻松集成.，、",img:siteProjectIcon3,link:"https://github.com/DevCaikun/TraineesAdmin.Net"},
   {title:"TraineesWorkflow.Net",introduce:"基于TraineesAdmin.Net的工作流框架",img:siteProjectIcon6,link:"https://github.com/DevCaikun/TraineesAdmin.Net"},
-  {title:"TraineesBlog.Net",introduce:"基于JDK21+SpringBoot3+PostgreSql17+React19的博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科等模块",img:siteProjectIcon2,link:"https://github.com/DevCaikun/TraineesWorkflow.Net"},
+  {title:"TraineesBlog.Net",introduce:"基于TraineesAdmin.Net的博客项目",img:siteProjectIcon2,link:"https://github.com/DevCaikun/TraineesWorkflow.Net"},
   {title:"TraineesBlog4J",introduce:"基于JDK21+SpringBoot3+PostgreSql17+React19的博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科等模块",img:siteProjectIcon2,link:"https://github.com/DevCaikun/TraineesBlog4J"},
   {title:"TraineesHomepage",introduce:"炫酷唯美的程序员个人介绍主页,采用TypeScript5 + Vite6 + Axios2 + Vue3 + Ant Design Vue 4 + SCSS2",img:siteProjectIcon1,link:"https://github.com/DevCaikun/TraineesHomepage"},
 ]);
